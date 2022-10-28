@@ -1,0 +1,103 @@
+* { /*Reseta os padrões definidos por padrão do html*/
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  text-decoration: none; 
+}
+
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('VictorMono-Regular.eot') format('eot');
+}
+
+:root{
+  --azulEscuro:#004459;
+  --azulMedio:#007EA5;
+  --azulClaro:#18BFF2;
+  --marrom:#432A11;
+  --laranja:#F78B1F;
+}
+
+html {
+  font-family: 'Victor Mono', monospace;
+  font-size: 100%;
+  background-color: var(--azulClaro);
+}
+
+.cabecalho{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  color:#fff;
+  font-size: 400%;
+  background-color: var(--laranja);
+}
+
+.strong{
+  font-style: italic;
+  color: var(--marrom);
+}
+
+.titulo {
+  display: flex;
+  border-top: 2.5px solid #fff;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  font-size: 500%;
+  font-style: oblique;
+  color: var(--azulEscuro);
+}
+
+.titulo-nome {
+  display: flex;
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+.subtitulo {
+  display: flex;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
+.corpo-texto{
+  display: flex;
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  border-top: 2px solid #fff ;
+  gap: 35px;
+  padding: 15px;
+  bottom: 0px;
+  background-color: var(--azulMedio);
+}
+
+a{
+  color: #fff;
+}
+
+a:hover{
+  color: var(--laranja);
+  font-style: oblique;
+}
+
+.rodape {
+  display: flex;
+  font-style: italic;
+  justify-content: center;
+  padding: 90px;
+}
